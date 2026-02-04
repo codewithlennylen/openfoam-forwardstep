@@ -14,7 +14,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+dimensions      [0 1 -1 0 0 0 0]; // Velocity dimensions in m/s
 
 internalField   uniform (3 0 0);
 
@@ -43,7 +43,7 @@ boundaryField
 
     obstacle
     {
-        type            noSlip;
+        type            noSlip; // type: wall
     }
 
     defaultFaces

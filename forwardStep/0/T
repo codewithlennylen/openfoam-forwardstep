@@ -14,7 +14,9 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 0 0 1 0 0 0];
+
+//              [Kg m s K mol Cd A] > Kilogram, meter, second, mole, Candela, Ampere
+dimensions      [0 0 0 1 0 0 0]; // Temperature dimensions in Kelvin
 
 internalField   uniform 1;
 

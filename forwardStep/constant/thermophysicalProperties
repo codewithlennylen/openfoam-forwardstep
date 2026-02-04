@@ -36,13 +36,13 @@ mixture
     }
     thermodynamics
     {
-        Cp              2.5;
+        Cp              2.5; // Specific heat
         Hf              0;
     }
     transport
     {
-        mu              0;
-        Pr              1;
+        mu              0; // Reynold's number
+        Pr              1; // Prandtl number
     }
 }
 

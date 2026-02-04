@@ -14,16 +14,17 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [1 -1 -2 0 0 0 0];
+//              [Kg m s K mol Cd A] > Kilogram, meter, second, mole, Candela, Ampere
+dimensions      [1 -1 -2 0 0 0 0]; // Pressure dimensions in Pascal
 
-internalField   uniform 1;
+internalField   uniform 1; // Initialize pressure to 1 Pascal in the entire geometry
 
 boundaryField
 {
     inlet
     {
         type            fixedValue;
-        value           uniform 1;
+        value           uniform 1; // Fix inlet pressure to 1 Pascal
     }
 
     outlet
