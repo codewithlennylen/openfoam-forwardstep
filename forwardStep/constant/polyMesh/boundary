@@ -16,47 +16,47 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-6   
+6
 (
     inlet
     {
         type            patch;
-        nFaces          50;
-        startFace       10325;
+        nFaces          60;
+        startFace       13790;
     }
     outlet
     {
         type            patch;
         nFaces          40;
-        startFace       10375;
+        startFace       13850;
     }
     bottom
     {
         type            symmetryPlane;
         inGroups        1(symmetryPlane);
-        nFaces          25;
-        startFace       10415;
+        nFaces          50;
+        startFace       13890;
     }
     top
     {
         type            symmetryPlane;
         inGroups        1(symmetryPlane);
-        nFaces          125;
-        startFace       10440;
+        nFaces          150;
+        startFace       13940;
     }
     obstacle
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          110;
-        startFace       10565;
+        nFaces          120;
+        startFace       14090;
     }
     defaultFaces
     {
-        type            empty; // Because we defined cells in the Z-axis to be 1.
+        type            empty;
         inGroups        1(empty);
-        nFaces          10500;
-        startFace       10675;
+        nFaces          14000;
+        startFace       14210;
     }
 )
 
