@@ -1,7 +1,7 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2412                                 |
+|  \\    /   O peration     | Version:  2412                                  |
 |   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
@@ -9,52 +9,22 @@ FoamFile
 {
     version     2.0;
     format      ascii;
+    arch        "LSB;label=32;scalar=64";
     class       dictionary;
-    object      controlDict;
+    location    "18.5/uniform";
+    object      time;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     sonicFoam;
+value           18.5000000000006253;
 
-startFrom       startTime;
+name            "18.5";
 
-startTime       0;
-
-stopAt          endTime;
-
-endTime         30;
+index           9250;
 
 deltaT          0.002;
 
-writeControl    runTime;
-
-writeInterval   0.5;
-
-purgeWrite      0;
-
-writeFormat     ascii;
-
-writePrecision  6;
-
-writeCompression off;
-
-timeFormat      general;
-
-timePrecision   6;
-
-runTimeModifiable true;
-
-functions
-{
-    libs            (fieldFunctionObjects);
-
-    Ma
-    {
-        type            MachNo;
-        executeControl  writeTime;
-        writeControl    writeTime;
-    }
-}
+deltaT0         0.002;
 
 
 // ************************************************************************* //
